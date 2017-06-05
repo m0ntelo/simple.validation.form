@@ -1,0 +1,116 @@
+/*
+Author: Wilson Montelo
+Description: 
+Version: 1.0
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
+@import url("reset.css");
+@import url("responsivo.css");
+// Mixins
+.transition(@args: all 1s){
+    -webkit-transition:@args ;
+    -moz-transition:@args ;
+    -ms-transition:@args ;
+    -o-transition:@args ;
+    transition:@args ;
+}
+// Fontes Padrão
+.fonte(){font-family: 'Open Sans', sans-serif;}
+/*  Body
+        ========================================================================== */
+body{
+    background-color: #F7D13E!important;
+    #centraliza{
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: ;
+        margin: 0 auto;
+    }
+}
+/*  Login
+        ========================================================================== */
+#login{
+    background-color: #fff;
+    width: 350px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -175px;
+    -webkit-box-shadow:  0px 0px 24px 10px rgba(128, 128, 128, 0.2);
+    box-shadow:  0px 0px 24px 10px rgba(128, 128, 128, 0.2);
+    // Logo Config
+    img{
+        width: 120px;
+        height: auto;
+        position: absolute;
+        top: -60px;
+        left: 50%;
+        margin-left: -60px;
+    }
+    input{
+        width: 100%;
+        height: 50px;
+        background-color: #CCCCCC;
+        color: #707487;
+        border: 0;
+        .fonte();
+        font-size: 16px;
+        font-weight: 600;
+        &:focus{
+            -webkit-box-shadow: inherit;
+            box-shadow: inherit;
+        }
+    }
+    span{
+        background-color: #CCCCCC;
+        color: #707487;
+        .input-group-addon{
+            background-color: #CCCCCC;
+            color: #707487;
+        }
+    }
+    button{
+        width: 100%;
+        height: 50px;
+        background-image: linear-gradient(to bottom, #5a4f4f 50%, #424242 50%);
+        color: #CDCDCD;
+        text-align: center;
+        border: 0;
+        text-transform: uppercase;
+        .fonte();
+        font-size: 16px;
+        font-weight: 600;
+    }
+    #mensagem-confirmada{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        border: 2px solid #ed6c27;
+        color: #fff;
+        background-color: #ed6c27;
+        .fonte();
+        font-size: 16px;
+        margin-top: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #mensagem-errada{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        border: 2px solid #dc4242;
+        color: #fff;
+        background-color: #dc4242;
+        .fonte();
+        font-size: 16px;
+        margin-top: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
